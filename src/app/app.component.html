@@ -1,0 +1,10 @@
+<div>
+  <app-search (emitSearch)="processSearch($event)"></app-search>
+  <app-filter (emitStatus)="processFilter($event)" class="left"></app-filter>
+</div>
+
+<hr>
+<app-user-list [users]= filterUser></app-user-list>
+
+
+
